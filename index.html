@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dwqdq</title>
+</head>
+<body style="padding: 0; margin: 0; height: 100vh;">
+	<iframe src="https://ecampus.pelitabangsa.ac.id/pb/"
+	id="myIframe"
+		style="width: 100%; height: 100%; border: none;"
+	></iframe>
+
+	  <script>
+        // Mendapatkan referensi ke elemen iframe
+        var iframe = document.getElementById('myIframe');
+
+        // Menunggu iframe selesai dimuat
+        iframe.onload = function() {
+            // Mendapatkan referensi ke elemen input di dalam iframe
+            var inputElement = iframe.contentDocument.getElementById('myInput');
+
+            // Mendapatkan nilai dari input
+            var inputValue = inputElement.value;
+
+            // Menampilkan nilai di konsol
+            console.log('Nilai Input:', inputValue);
+        };
+    </script>
+
+</body>
+</html>
